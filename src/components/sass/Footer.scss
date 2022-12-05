@@ -1,0 +1,66 @@
+.foot{
+    color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30vw;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        
+        li{
+            list-style-type: none;
+        }
+    }
+
+    .contactForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        input, textarea{
+            width: 20vw;
+            height: 40px;
+            background-color: #F7F7F7;
+            border: none;
+            color: #393E46;
+            display: flex;
+            padding-left: 10px;
+
+            &:focus{
+                color: #393E46;
+                outline: none;
+            }
+
+            &::placeholder{
+                color: #393E46;
+            }
+        }
+       
+        #name{
+            border-bottom: 1px solid #393E46;
+        }
+        #email{
+            border-bottom: 1px solid #393E46 ;
+        }
+        #content{
+            height: 100px;
+            padding-top: 10px;
+            resize: none;
+
+        }
+        #submit{
+            width: 5vw;
+            border: 1px solid white;
+            text-align: center;
+            margin: 5px 0;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

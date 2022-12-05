@@ -1,0 +1,63 @@
+.skillType{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #742e9c88;
+    box-shadow: 0px 4px 24px #742e9c77;
+    margin: 20px 0;
+    
+    .skillName{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    img{
+        height: 60px;
+        margin: 20px;
+    }
+
+    .skillSize{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .skillContainer{
+            width: 400px;
+            height: 20px;
+            border-radius: 15px;
+            background-color: #50107554;
+            margin: 20px;
+
+            div{
+                height: 100%;
+                border-radius: 15px;
+                background-color: #742e9c;
+            }
+
+            #HTMLlvl, #CSSlvl{
+                width: 90%;
+            }
+
+            #JSlvl, #CSlvl, #PSlvl, #GHlvl, #Unitylvl{
+                width: 80%;
+            }
+
+            #PHPlvl, #AIlvl, #Reactlvl{
+                width: 70%;
+            }
+
+            #PRlvl, #AElvl{
+                width: 50%;
+            }
+
+            #XDlvl{
+                width: 40%;
+            }
+
+        }
+    }
+}
