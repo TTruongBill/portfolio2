@@ -6,11 +6,12 @@ Ce projet à été créé avec ReactJS et Firebase comme but de faire un portfol
 ## Fait
 
 En Format Desktop : Nav, Accueil, À propos
+En Format Mobile : Accueil, À propos
 
 ## À Faire
 
 En Format Desktop : Projects, Footer
-En Format Mobile : Nav, Accueil, À propos, Projects, Footer
+En Format Mobile : Nav, Projects, Footer
 
 ## Website
 
@@ -23,11 +24,11 @@ This project was created with ReactJS and Firebase as a goal to create a website
 ## Done
 
 In desktop : Nav, Home, About
-
+In Mobile : Home, About
 ## To Do
 
 In Desktop : Projects, Footer
-In Mobile : Nav, Home, About, Projects, Footer
+In Mobile : Nav, Projects, Footer
 
 ## Website
 
