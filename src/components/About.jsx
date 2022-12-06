@@ -3,9 +3,12 @@ import Skill from './Skill'
 export default function About(){
     return(
         <div className="about" id="about">
-            <h1>À Propos</h1>
+            <h2>À Propos</h2>
             <h1>Qui Je Suis</h1>
-            <p>En tant que finissant en multimédia, j’ai acquis des connaissances et des habiletés qui me permettent d’être efficace et organisé. La programmation de jeux vidéos et de sites web sont mes intérêts principaux. J’apprends rapidement et je m’adapte facilement aux situations inattendues grâce à ma patience et ma débrouillardise.</p>
+            <p>En tant que finissant en multimédia, j’ai acquis des connaissances et des habiletés qui me permettent d’être efficace et organisé.</p> 
+            <p> La programmation de jeux vidéos et de sites web sont mes intérêts principaux. </p>
+            <p> J’apprends rapidement et je m’adapte facilement aux situations inattendues grâce à ma patience et ma débrouillardise.</p>
+
             <div>
                 <section className="skill" id="skillLanguage">
                     <h2>LANGAGES</h2>

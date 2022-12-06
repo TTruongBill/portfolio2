@@ -1,14 +1,28 @@
-#navDesktop{
+#navDesktop,#navMobile{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.397);
+    color: #D6D6D6;
+    font-weight: bold;
+    font-size: 1.4em;
+    width: 100%;
+    
+    h1{
+        margin: 0;
+        color: white;
+
+        span{
+            color:#742e9c;
+
+        }
+    }
+
+}
+#navDesktop{
     width: 98%;
-    color: #D6D6D6;;
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding: 0 40px;
     align-items: center;
-    font-weight: bold;
-    font-size: 1.4em;
 
     &.is-hidden {
         opacity: 0;
@@ -21,16 +35,7 @@
         transform: translate(0,0);
         transition: .5s ease;
       }
-    h1{
-        margin: 0;
-        color: white;
-
-        span{
-            color:#742e9c;
-
-        }
-    }
-
+      
     nav{
         display: flex;
         flex-direction: row;
@@ -44,4 +49,85 @@
         }
     }
    
+}
+
+#navMobile{
+    display: flex;
+
+    h1{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .top{
+        text-align: right;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+    //Menu burger Mobile
+    .menuIcon{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 2;
+        transform: rotateZ(0deg);
+        transition: transform 0.5s;
+    }
+
+    #menu:checked ~ label > .menuIcon{
+        transform: rotateZ(90deg);
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #menu:checked ~ .menu{
+        transform: translateX(0%);
+    }
+
+    .app ~ #menu:checked {
+        opacity: 0;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgb(113, 113, 113);
+        transform: translateX(100%);
+        transition: transform 0.5s;
+        z-index: 2;
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+            a{
+                margin: 25px 20px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+@media screen and (min-width: 1040px){
+    #navMobile{
+        display: none;
+    }
+    #navDesktop{
+        display: flex;
+    }
 }

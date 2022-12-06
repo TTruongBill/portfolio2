@@ -5,8 +5,8 @@ export default function Home(){
         <section id='home'>
             <img src="./images/guyIcon.svg" alt="guyIcon" />
             <div className='contenuHome'>
-                <h2>Bonjour, je suis</h2>
-                <h1>Tien Tien <br></br>Truong</h1>
+                <h1>Bonjour, je suis</h1>
+                <h2>Tien Tien Truong</h2>
                 <p>Développeur Web Front-end</p>
             </div>
         </section>

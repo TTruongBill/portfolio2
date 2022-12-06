@@ -11,24 +11,28 @@
     #13111C;
 
     img{
-        height: 50vh;
+        width: 80%;
+        max-width: 600px;
+        height: auto;
     }
 
     .contenuHome{
+        
         h2{
-            font-size: 70px;
+            font-family: adobe-garamond-pro,serif;
+            font-style: italic;
+            font-size: clamp(50px, 5vw, 70px);
+            margin: 5px 0 20px 0;
+            color: #742e9c;
+            
+        }
+        h1{
+            font-size: clamp(40px, 6vw, 70px);
             margin: 0;
             color: white;
         }
-        h1{
-            font-family: adobe-garamond-pro,serif;
-            font-style: italic;
-            font-size: calc(1.5rem + 3.5vw);
-            margin: 5px 0 20px 0;
-            color: #742e9c;
-        }
         p{
-            font-size: calc(1.5rem + 0.7vw);
+            font-size: clamp(20px, 3vw, 30px);
             margin: 0;
             color: #848290;
         }
@@ -36,11 +40,14 @@
     
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1200px){
+
+   
     #home{
         justify-content: space-around;
         height: 66vh;
         flex-direction: row;
+
     }
 
     .contenuHome{
