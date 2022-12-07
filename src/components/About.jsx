@@ -1,5 +1,6 @@
 import './sass/About.scss'
 import Skill from './Skill'
+
 export default function About(){
     return(
         <div className="about" id="about">
@@ -42,3 +43,25 @@ export default function About(){
         </div>
     )
 }
+
+
+
+let item = {
+            "yes":  [
+            {
+                "id": 1,
+                "salute": [{
+                    "hello": "hello",
+                    "bye": "bye"
+                }]
+                }],
+            "no":[
+            {
+                "id": 1,
+                "salute": [{
+                    "hello": "hello",
+                    "bye": "bye"
+                }]
+            }]
+            
+            }

@@ -12,6 +12,6 @@ export default function Skill({nameTitle, nameImg, nameCSS}){
                 <div id={nameCSS + "lvl"}></div>
             </div>
         </div>
-    </section>
+        </section>
     )
 }
