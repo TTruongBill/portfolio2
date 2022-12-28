@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 40px 0;
+    padding: 70px 0;
     background: 
     linear-gradient(327.21deg, rgba(33, 0, 75, 0.24) 3.65%, rgba(60, 0, 136, 0) 40.32%), 
     linear-gradient(245.93deg, rgba(209, 21, 111, 0.16) 0%,rgba(209, 25, 80, 0) 36.63%), 
@@ -43,7 +43,6 @@
 @media screen and (min-width:961px) {
     #home{
         justify-content: space-around;
-        height: 66vh;
         flex-direction: row;
 
     }

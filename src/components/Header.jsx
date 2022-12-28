@@ -30,11 +30,11 @@ export default function Header(){
     return(
         <div>
             <section id='navDesktop' ref={ref}>
-                <h1> 
+                <h2> 
                 <span>&#60; </span>
                     Tien 
                 <span> /&#62;</span>
-                </h1>
+                </h2>
                 <nav>
                     <a href="#home">Accueil</a>
                     <a href="#about">À propos</a>
@@ -43,11 +43,11 @@ export default function Header(){
                 </nav>
             </section>
             <section id='navMobile'>
-                <h1> 
+                <h2> 
                 <span>&#60; </span>
                     Tien 
                 <span> /&#62;</span>
-                </h1>
+                </h2>
                 <input type="checkbox" id="menu"/>
                 <label htmlFor="menu"> <MenuIcon className='menuIcon' fontSize='large'></MenuIcon> </label>
                 <div className='menu'>

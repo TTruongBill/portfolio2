@@ -8,7 +8,23 @@ body {
   background-color: #13111c;
   overflow-x: hidden;
 
+  p{
+    font-size: clamp(20px, 2vw, 30px);
+    width: 80%;
+  }
 
+  h2{
+    font-size: clamp(1.5em, 3vw, 2.5em);
+    margin: 5px 0;
+    color: #fff;
+  }
+
+  h1{
+    margin: 10px 0;
+    font-size: clamp(2em, 5vw, 4em);
+    color: #42946e;
+
+  }
 }
 
 code {
