@@ -4,8 +4,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 30vw;
-    padding: 70px 0;
+    padding: 35px 0 0 0;
+    position: relative;
 
     ul{
         display: flex;
@@ -15,53 +15,113 @@
             list-style-type: none;
         }
     }
-
-    .contactForm{
+    #footerInfo{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        align-items: center;
 
-        input, textarea{
-            width: 20vw;
-            height: 40px;
-            background-color: #F7F7F7;
-            border: none;
-            color: #393E46;
+        #contact{
+            width: 100%;
             display: flex;
-            padding-left: 10px;
-
-            &:focus{
-                color: #393E46;
-                outline: none;
+            flex-direction: column;
+            align-items: center;
+                .contactForm{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90%;
+                    background-color: #1a1824;
+                    border-radius: 15px;
+    
+                    p{
+                        width: 90%;
+                        margin: 20px;
+                    }
+        
+                    input, textarea{
+                        font-family: 'Lato', sans-serif;
+                        width: 90%;
+                        height: 40px;
+                        padding: 0 0 0 10px;
+                        margin: 0 10px;
+                        border: none;
+                        color: #fdfdfd;
+                        background-color: #13111c;
+                        box-shadow: none;
+                        border-radius: 15px;
+                        
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                
+                    #content{
+                        height: 100px;
+                        padding-top: 10px;
+                        resize: none;
+                    }
+    
+                    #submit{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        transition: all 0.2s;
+                        width: 100px;
+                        border: 1px solid white;
+                        margin: 20px;
+                        align-self: flex-end;
+    
+                        &:hover{
+                            background-color: #393E46;
+                            color: #F7F7F7;
+                            cursor: pointer;
+                        }
+                    }
             }
+        
+        }
+            #myInfo{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            
+                #infoContent{
+                    background-color:  #1a1824;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    border-radius: 15px;
 
-            &::placeholder{
-                color: #393E46;
+                    .info{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        width: 70%;
+                        justify-content: space-around;
+                        
+                    }
+                }
+               
             }
-        }
-       
-        #name{
-            border-bottom: 1px solid #393E46;
-        }
-        #email{
-            border-bottom: 1px solid #393E46 ;
-        }
-        #content{
-            height: 100px;
-            padding-top: 10px;
-            resize: none;
+    }
+    #copyright{
+        font-size: 1em;
+        text-align: center;
+    }
+}
 
-        }
-        #submit{
-            width: 5vw;
-            border: 1px solid white;
-            text-align: center;
-            margin: 5px 0;
-
-            &:hover{
-                cursor: pointer;
-            }
+@media screen and (min-width:961px){
+    .foot{
+        #footerInfo{
+            flex-direction: row;
+            align-items: flex-start;
         }
     }
 }
