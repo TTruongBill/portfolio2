@@ -30,7 +30,7 @@ export default function Footer(){
             <div id="footerInfo">
                 <div id="contact">
                     <h1>Envoyez Un Courriel</h1>
-                    <p></p>
+                    <p className='miniCom'>Si vous êtes intéressé à me connaître davantage, vous pouvez remplir le formulaire ci dessous!</p>
                     <form onSubmit={onSubmit} className='contactForm'>
                         <p>Prénom</p>
                         <input id="name" type="text" name='from_name' value={toSend.from_name} onChange={handleChange}/>
@@ -47,7 +47,7 @@ export default function Footer(){
                 </div>
                 <div id='myInfo'>
                 <h1>Mes Informations</h1>
-                <p></p>
+                <p className='miniCom'>Si vous préférez me contacter d'une manière autre que le formulaire, voici mes informations.</p>
                     <div id="infoContent">
                         <div className='info'>
                             <EmailIcon/>
@@ -59,7 +59,7 @@ export default function Footer(){
                         </div> 
                         <div className='info'>
                             <HomeIcon/>
-                            <p>Montréal,QC</p>
+                            <p>Montréal, QC</p>
                         </div>
                     </div>
                 </div>

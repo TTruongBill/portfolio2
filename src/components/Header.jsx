@@ -36,10 +36,10 @@ export default function Header(){
                 <span> /&#62;</span>
                 </h2>
                 <nav>
-                    <a href="#home">Accueil</a>
-                    <a href="#about">À propos</a>
-                    <a href="#projects">Portfolio</a>
-                    <a href="#foot">Contact</a>
+                    <a href="#home" className="navLink">Accueil</a>
+                    <a href="#about" className="navLink">À propos</a>
+                    <a href="#projects" className="navLink">Portfolio</a>
+                    <a href="#foot" className="navLink">Contact</a>
                 </nav>
             </section>
             <section id='navMobile'>
@@ -55,10 +55,10 @@ export default function Header(){
                         <label htmlFor="menu"><ClearIcon className='clearIcon'fontSize='large'></ClearIcon></label>
                     </section>
                     <nav>
-                        <a href="#home">Accueil</a>
-                        <a href="#about">À propos</a>
-                        <a href="#projects">Portfolio</a>
-                        <a href="#foot">Contact</a>
+                        <a href="#home" className="navLink">Accueil</a>
+                        <a href="#about" className="navLink">À propos</a>
+                        <a href="#projects" className="navLink">Portfolio</a>
+                        <a href="#foot" className="navLink">Contact</a>
                     </nav>
                 </div>
                

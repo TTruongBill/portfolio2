@@ -7,6 +7,9 @@
     padding: 35px 0 0 0;
     position: relative;
 
+    .miniCom{
+        text-align: center;
+    }
     ul{
         display: flex;
         flex-direction: row;
@@ -70,13 +73,12 @@
                         padding: 0;
                         transition: all 0.2s;
                         width: 100px;
-                        border: 1px solid white;
+                        border: 1px solid #742e9c;
                         margin: 20px;
                         align-self: flex-end;
     
                         &:hover{
-                            background-color: #393E46;
-                            color: #F7F7F7;
+                            background-color: #742e9c;
                             cursor: pointer;
                         }
                     }
