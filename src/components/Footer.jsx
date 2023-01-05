@@ -43,8 +43,8 @@ export default function Footer(){
                         <input required id="nameFam" type="text" name='from_nameFam' value={toSend.from_nameFam} onChange={handleChange}/>
                         <p>Courriel*</p>
                         <input required id="email" placeholder="ex: monnom@example.com"type="email" name='reply_to' value={toSend.reply_to} onChange={handleChange}/>
-                        <p>Téléphone*</p>
-                        <input required id="number" placeholder="ex: 514-999-9999" type="tel" name='number' value={toSend.number} onChange={handleChange} pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"/>
+                        <p>Téléphone</p>
+                        <input id="number" placeholder="ex: 514-999-9999" type="tel" name='number' value={toSend.number} onChange={handleChange} pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"/>
                         <p>Message*</p>
                         <textarea required id="content" name='message' value={toSend.message} onChange={handleChange}></textarea>
                         <input id="submit" type="submit"/>
