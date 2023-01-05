@@ -9,7 +9,7 @@ export default function ProjectInfo({title, img, imgName, link, content, date, s
             <h2>{title}</h2>
             <img src={"./images/" + img + ".jpg"} alt="" />
             <p dangerouslySetInnerHTML={{__html:content}}></p>
-            <p>Lien vers le projet : <a href={link}>{link}</a></p>
+            <p>Lien vers le projet : <a href={link} target="_blank">{link}</a></p>
             <p>Date de production : {date}</p>
         </section>
     )

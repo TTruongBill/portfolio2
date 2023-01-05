@@ -20,7 +20,7 @@ export default function Footer(){
     function onSubmit(e){
         e.preventDefault();
         if(sent == false){
-            //sendEmail(toSend);
+            sendEmail(toSend);
             setSent(true);
         } 
     };

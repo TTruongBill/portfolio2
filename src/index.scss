@@ -29,6 +29,17 @@ body {
     color: #42946e;
 
   }
+
+  a, a:visited{
+    color: #b173ff;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+
+  }
 }
 
 code {
