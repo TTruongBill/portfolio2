@@ -9,21 +9,23 @@ export default function Header(){
 
     useEffect(() => {
         // clean up code
-            window.removeEventListener('scroll', onScroll);
-            window.addEventListener('scroll', onScroll);
+        window.removeEventListener('scroll', onScroll);
+        window.addEventListener('scroll', onScroll);
     }, []);
 
     function onScroll(){
-        let nav = ref.current;
-        var currentScroll = window.pageYOffset;
-            if (currentScroll > 0 && prevScroll <= currentScroll){
-                window.setTimeout((()=>{nav.classList.remove("is-visible");
-                                        nav.classList.add("is-hidden");}), 300);
-            } else {
-                window.setTimeout((()=>{ nav.classList.remove("is-hidden");
-                                        nav.classList.add("is-visible");}), 300);
-            }
-        prevScroll = currentScroll;
+        if (window.innerWidth > 960){
+            let nav = ref.current;
+            var currentScroll = window.pageYOffset;
+                if (currentScroll > 0 && prevScroll <= currentScroll){
+                    window.setTimeout((()=>{nav.classList.remove("is-visible");
+                                            nav.classList.add("is-hidden");}), 100);
+                } else {
+                    window.setTimeout((()=>{ nav.classList.remove("is-hidden");
+                                            nav.classList.add("is-visible");}), 100);
+                }
+            prevScroll = currentScroll;
+        }
     }
     
     

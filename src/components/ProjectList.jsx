@@ -5,11 +5,11 @@ import Project from '../components/Project';
 
 export default function ProjectList({projects, setProjects}){
     
-    useEffect(
+    /*useEffect(
         () => port.lireTout().then(
             theProjets => setProjects(theProjets)
         ), [setProjects]
-    );
+    );*/
 
     return(
         <section id='projects'>

@@ -4,8 +4,10 @@ import {sendEmail} from '../emailJS';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
+import SubmitPopUp from './SubmitPopUp';
 
 export default function Footer(){
+    const [sent, setSent] = useState(false);
     const [toSend, setToSend] = useState({
         from_name: '',
         from_nameFam: '',
@@ -15,22 +17,25 @@ export default function Footer(){
         reply_to: '',
       });
 
-    const onSubmit = (e) => {
+    function onSubmit(e){
         e.preventDefault();
-        sendEmail(toSend);
+        if(sent == false){
+            //sendEmail(toSend);
+            setSent(true);
+        } 
     };
 
-    const handleChange = (e) => {
+    function handleChange(e){
         setToSend({ ...toSend, [e.target.name]: e.target.value });
-      };
+    };
 
     return(
         <div className="foot" id="foot">
             <h2>Contact</h2>
             <div id="footerInfo">
                 <div id="contact">
-                    <h1>Envoyez Un Courriel</h1>
-                    <p className='miniCom'>Si vous êtes intéressé à me connaître davantage, vous pouvez remplir le formulaire ci dessous!</p>
+                    <h1>Envoyer Un Courriel</h1>
+                    <p className='miniCom'>Si vous êtes intéressé à me connaître davantage, vous pouvez remplir le formulaire ci-dessous!</p>
                     <form onSubmit={onSubmit} className='contactForm'>
                         <p>Prénom</p>
                         <input id="name" type="text" name='from_name' value={toSend.from_name} onChange={handleChange}/>
@@ -39,10 +44,10 @@ export default function Footer(){
                         <p>Courriel*</p>
                         <input required id="email" placeholder="ex: monnom@example.com"type="email" name='reply_to' value={toSend.reply_to} onChange={handleChange}/>
                         <p>Téléphone*</p>
-                        <input required id="number" placeholder="ex: 514-999-9999" type="tel" name='number' value={toSend.number} onChange={handleChange} pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                        <input required id="number" placeholder="ex: 514-999-9999" type="tel" name='number' value={toSend.number} onChange={handleChange} pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"/>
                         <p>Message*</p>
                         <textarea required id="content" name='message' value={toSend.message} onChange={handleChange}></textarea>
-                        <input id="submit" type="submit" />
+                        <input id="submit" type="submit"/>
                     </form>
                 </div>
                 <div id='myInfo'>
@@ -65,6 +70,7 @@ export default function Footer(){
                 </div>
             </div>
             <p id="copyright">&copy;Tien Tien Bill Truong, 2023</p>
+            <SubmitPopUp setSent={setSent} sent={sent}/>
         </div>
     )
 }
