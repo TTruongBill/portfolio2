@@ -8,7 +8,7 @@ export default function Project({title, img, imgName, link, content, date}){
 
     return(
         <div>
-            <section className='project' onClick={()=>{if(boxActive == false){setBoxActive(true)}}}>
+            <section className={'project ' + img} onClick={()=>{if(boxActive == false){setBoxActive(true)}}}>
                 <img src={"./images/" + img + ".jpg"} alt="" />
                 <section className="projectText">
                     <h1>{title}</h1>

@@ -14,10 +14,22 @@
     align-items: center;
     border-radius: 15px;
 
+    ul{
+        margin: 0;
+    }
+
     svg{
+        position: sticky;
+        top: 15px;
+        right: 15px;
         align-self: flex-end;
         color: white;
         margin: 15px 15px 0 0;
+        cursor: pointer;
+
+        &:hover{
+            color: #b173ff;
+        }
     }
     img{
         width: 90%;
