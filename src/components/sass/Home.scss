@@ -24,17 +24,21 @@
             font-size: clamp(50px, 5vw, 70px);
             margin: 5px 0 20px 0;
             color: #742e9c;
+            text-align: center;
             
         }
         h1{
             font-size: clamp(40px, 6vw, 70px);
             margin: 0;
             color: white;
+            text-align: center;
         }
         p{
             font-size: clamp(20px, 3vw, 30px);
             margin: 0;
             color: #848290;
+            text-align: center;
+            width: 100%;
         }
     }
     
@@ -44,20 +48,28 @@
     #home{
         justify-content: space-around;
         flex-direction: row;
-
+        
+        .contenuHome{
+            h2{
+                font-size: calc(1.5rem + 2.3vw);
+                margin: 0;
+                text-align: start;
+            }
+    
+            p{
+                font-size: 30px;
+                margin: 0;
+                text-align: start;
+                width: 80%;
+            }
+    
+            h1{
+                text-align: start;
+            }
+        }
     }
 
-    .contenuHome{
-        h2{
-            font-size: calc(1.5rem + 2.3vw);
-            margin: 0;
-        }
-
-        p{
-            font-size: 30px;
-            margin: 0;
-        }
-    }
+  
 }
 @media screen and (min-width: 1920px){
     #home{
