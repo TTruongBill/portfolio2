@@ -4,6 +4,8 @@ import {sendEmail} from '../emailJS';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import DownloadIcon from '@mui/icons-material/Download';
 import SubmitPopUp from './SubmitPopUp';
 
 export default function Footer(){
@@ -50,21 +52,37 @@ export default function Footer(){
                         <input id="submit" type="submit"/>
                     </form>
                 </div>
-                <div id='myInfo'>
-                <h1>Mes Informations</h1>
-                <p className='miniCom'>Si vous préférez me contacter d'une manière autre que le formulaire, voici mes informations.</p>
-                    <div id="infoContent">
-                        <div className='info'>
-                            <EmailIcon/>
-                            <p>tientientruong1@gmail.com</p>
+                <div id="secDiv">
+                    <div id='myInfo'>
+                        <h1>Mes Informations</h1>
+                        <p className='miniCom'>Si vous préférez me contacter d'une manière autre que le formulaire, voici mes informations.</p>
+                        <div id="infoContent">
+                            <div className='info'>
+                                <EmailIcon/>
+                                <p>tientientruong1@gmail.com</p>
+                            </div>
+                            <div className='info'>
+                                <PhoneIcon/>
+                                <p>514-830-5213</p>
+                            </div> 
+                            <div className='info'>
+                                <HomeIcon/>
+                                <p>Montréal, QC</p>
+                            </div>
                         </div>
-                        <div className='info'>
-                            <PhoneIcon/>
-                            <p>514-830-5213</p>
-                        </div> 
-                        <div className='info'>
-                            <HomeIcon/>
-                            <p>Montréal, QC</p>
+                    </div>
+                    <div id='other'>
+                        <h1>Informations additionnelles</h1>
+                        <p className='miniCom'>Si vous êtes curieux à propos de mes expériences professionels.</p>
+                        <div id="infoContent">
+                            <div className='info'>
+                                <a href="images/Truong_TienTienBill_CV.pdf" download="images/Truong_TienTienBill_CV.pdf"><DownloadIcon/></a>
+                                <a href="images/Truong_TienTienBill_CV.pdf" download="images/Truong_TienTienBill_CV.pdf">Clickez pour obtenir mon CV</a>
+                            </div>
+                            <div className='info'>
+                                <a href="https://www.linkedin.com/in/tien-tien-truong/"><LinkedInIcon/></a>
+                                <a href="https://www.linkedin.com/in/tien-tien-truong/">LinkedIn</a>
+                            </div> 
                         </div>
                     </div>
                 </div>
