@@ -6,6 +6,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DownloadIcon from '@mui/icons-material/Download';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import SubmitPopUp from './SubmitPopUp';
 
 export default function Footer(){
@@ -56,7 +57,7 @@ export default function Footer(){
                     <div id='myInfo'>
                         <h1>Mes Informations</h1>
                         <p className='miniCom'>Si vous préférez me contacter d'une manière autre que le formulaire, voici mes informations.</p>
-                        <div id="infoContent">
+                        <div className="infoContent">
                             <div className='info'>
                                 <EmailIcon/>
                                 <p>tientientruong1@gmail.com</p>
@@ -69,20 +70,27 @@ export default function Footer(){
                                 <HomeIcon/>
                                 <p>Montréal, QC</p>
                             </div>
+                           
                         </div>
                     </div>
                     <div id='other'>
-                        <h1>Informations additionnelles</h1>
-                        <p className='miniCom'>Si vous êtes curieux à propos de mes expériences professionels.</p>
-                        <div id="infoContent">
+                        <h1>Mes Réseaux</h1>
+                        <p className='miniCom'>Si vous voulez en savoir plus à propos de moi, voici mon linkedin, mon github et mon cv.</p>
+                        <div className="infoContent">
                             <div className='info'>
-                                <a href="images/Truong_TienTienBill_CV.pdf" download="images/Truong_TienTienBill_CV.pdf"><DownloadIcon/></a>
-                                <a href="images/Truong_TienTienBill_CV.pdf" download="images/Truong_TienTienBill_CV.pdf">Clickez pour obtenir mon CV</a>
-                            </div>
-                            <div className='info'>
-                                <a href="https://www.linkedin.com/in/tien-tien-truong/"><LinkedInIcon/></a>
-                                <a href="https://www.linkedin.com/in/tien-tien-truong/">LinkedIn</a>
+                                <LinkedInIcon href="https://www.linkedin.com/in/tien-tien-truong/"/>
+                                <p><a href="https://www.linkedin.com/in/tien-tien-truong/">LinkedIn</a></p>
                             </div> 
+                            <div className='info'>
+                                <GitHubIcon href="https://github.com/k1polo"/>
+                                <p><a href="https://github.com/k1polo">GitHub</a></p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div className="infoContent" id='cv'>
+                        <div className='info'>
+                            <DownloadIcon href="images/Truong_TienTienBill_CV.pdf" download="images/Truong_TienTienBill_CV.pdf"/>
+                            <p><a href="images/Truong_TienTienBill_CV.pdf" download="images/Truong_TienTienBill_CV.pdf">Clickez pour obtenir mon CV</a></p>
                         </div>
                     </div>
                 </div>
